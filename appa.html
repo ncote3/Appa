@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Virtual Pest Cote</title>
+    <link rel="stylesheet" type="text/css" href="appa.css">
+    <script src="appa.js"></script> <!-- Pet script -->
+</head>
+<body>
+    <div id="intro">
+        <h1>Appa</h1>
+        <h3>Developed and designed by Noah Cote</h3>
+        <hr>
+        <p>This is Appa, he is a flying bison with a range of emotions, which include:</p>
+        <ol>
+            <li>Relaxed</li>
+            <li>Happy</li>
+            <li>Sad</li>
+            <li>Crying</li>
+            <li>Hungry</li>
+            <li>Tired</li>
+            <li>Sleeping</li>
+        </ol>
+        <p>
+            Given Appa's various states, they are mostly effected by outside stimuli, below you will find actions you can take <br>
+            in the forms of buttons. These buttons will help Appa transition between his different states, but there are also uncontrollable <br>
+            factors that can affect him as well, such as time, lack of attention, and hunger. Above Appa a header displays the state in which <br>
+            he is in, and below that is a hint on how to bring him back to his relaxed state. For more detailed documentation please visit <a href="appadoc.html">Appa, A Virtual Pest's Documentation.</a>
+        </p>
+    </div>
+    <hr> <!-- Actual Pet Below -->
+    <center><div id="appa">
+        <center><h1>Appa</h1></center>
+        <center><h3 id="mood">Relaxed</h3></center><!-- MOOD HERE -->
+        <center><p id="hint">Maybe try playing with him!</p></center><!-- Hint -->
+        <center><p id="hlevel">He doesn't seem hungry yet.</p></center><!-- Hunger Display -->
+        <center><img id="picture" src="assets/relaxed.png"></center>
+        <div> <!-- Buttons -->
+            <button onclick="feed()">Feed</button>
+            <button onclick="pet()">Pet</button>
+            <button onclick="cuddle()">Cuddle</button>
+            <button onclick="coax()">Console</button>
+            <button onclick="wake()">Wake</button>
+            <button onclick="sleep()">Bed Time Story</button>
+            <button onclick="berries()">Give Berries</button>
+            <button onclick="playwith()">Play</button>
+            <button onclick="ignore()">Ignore</button>
+        </div>
+    </div></center>
+</body>
+</html>
